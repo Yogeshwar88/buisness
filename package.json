@@ -1,0 +1,15 @@
+{
+  "name": "rise-dula",
+  "version": "1.0.0",
+  "description": "This is Jessica's website, maybe.",
+  "main": "index.html",
+  "author": "Gage Peterson",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.7.1"
+  }
+}

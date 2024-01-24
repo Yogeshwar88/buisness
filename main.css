@@ -1,0 +1,124 @@
+.postGrid {
+  display: grid;
+  grid-template-columns: auto 10rem 30rem 10rem auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 1.5rem;
+}
+
+@media only screen and (max-width: 50rem) {
+  .postGrid {
+    display: grid;
+    grid-template-columns: auto 0px 30rem 0px auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .postGrid {
+    display: grid;
+    grid-template-columns: 2rem auto auto auto 2rem;
+    grid-column-gap: 5px;
+    grid-row-gap: 1.5rem;
+  }
+}
+
+.postGrid > div {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.postGrid > .center {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.postGrid > p {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.postGrid > h1 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  margin-bottom: 0;
+}
+
+.postGrid > h2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  margin-bottom: 0;
+}
+.postGrid > h3 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  margin-bottom: 0;
+}
+
+.postGrid > blockquote {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  margin: 0;
+}
+
+.mainImage {
+  background: url('./mountains.jpg') no-repeat center;
+}
+
+.rise {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.rise:hover {
+  transform: translate(0, -2px);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* images */
+@media only screen and (max-width: 800px) {
+  .image-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+.image-grid > a > img {
+  transition: 0.25s cubic-bezier(0.36, 0.07, 0, 1.01);
+  object-fit: cover;
+  transform: scale(1);
+}
+
+.image-grid > a > img:hover {
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+.image-grid > a > img:active {
+  transform: scale(0.8);
+  z-index: 1;
+}
+
+.sacramento {
+  font-family: 'Sacramento', athelas, georgia, serif;
+}
+
+@media only screen and (min-width: 60em) {
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+}
